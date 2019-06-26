@@ -9,12 +9,12 @@
 import Foundation
 import GameKit
 
-/// Produces, keep and use reproducible RPNG numbers conveniently.
-public struct ReproducibleRPNG {
+/// Produces, keep and use reproducible PRNG numbers conveniently.
+public struct ReproduciblePRNG {
     private(set) var samples = [Int]()
     private(set) var currentIndex = 0
 }
-public extension ReproducibleRPNG {
+public extension ReproduciblePRNG {
     init(_ n: Int) {
         precondition(n>0)
         samples.reserveCapacity(n)
