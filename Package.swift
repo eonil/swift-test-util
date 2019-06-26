@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "TestUtil",
     platforms: [
-        .macOS(.v10_14),
+        .macOS(.v10_11),
     ],
     products: [
         .library(name: "TestUtil", type: .static, targets: ["TestUtil"]),
