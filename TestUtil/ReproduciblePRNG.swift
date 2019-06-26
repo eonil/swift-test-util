@@ -34,7 +34,6 @@ public extension ReproduciblePRNG {
     }
     mutating func nextWithRotation(in r: Range<Int>) -> Int {
         let c = r.count
-        precondition(r.count > 0)
         guard c > 0 else { return 0 }
         let n = nextWithRotation() % c
         return r.lowerBound + n
